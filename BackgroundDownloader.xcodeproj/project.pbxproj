@@ -9,19 +9,17 @@
 /* Begin PBXBuildFile section */
 		818856DA21A3E81100FE48EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818856D921A3E81100FE48EA /* AppDelegate.swift */; };
 		818856DC21A3E81100FE48EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818856DB21A3E81100FE48EA /* ViewController.swift */; };
-		818856DF21A3E81100FE48EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818856DD21A3E81100FE48EA /* Main.storyboard */; };
 		818856E121A3E81200FE48EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818856E021A3E81200FE48EA /* Assets.xcassets */; };
-		818856E421A3E81200FE48EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818856E221A3E81200FE48EA /* LaunchScreen.storyboard */; };
+		818856EC21A4081700FE48EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818856EB21A4081700FE48EA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		818856D621A3E81100FE48EA /* BackgroundDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818856D921A3E81100FE48EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818856DB21A3E81100FE48EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		818856DE21A3E81100FE48EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		818856E021A3E81200FE48EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		818856E321A3E81200FE48EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818856E521A3E81200FE48EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		818856EB21A4081700FE48EA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +54,8 @@
 			children = (
 				818856D921A3E81100FE48EA /* AppDelegate.swift */,
 				818856DB21A3E81100FE48EA /* ViewController.swift */,
-				818856DD21A3E81100FE48EA /* Main.storyboard */,
 				818856E021A3E81200FE48EA /* Assets.xcassets */,
-				818856E221A3E81200FE48EA /* LaunchScreen.storyboard */,
+				818856EB21A4081700FE48EA /* LaunchScreen.storyboard */,
 				818856E521A3E81200FE48EA /* Info.plist */,
 			);
 			path = BackgroundDownloader;
@@ -122,9 +119,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				818856E421A3E81200FE48EA /* LaunchScreen.storyboard in Resources */,
 				818856E121A3E81200FE48EA /* Assets.xcassets in Resources */,
-				818856DF21A3E81100FE48EA /* Main.storyboard in Resources */,
+				818856EC21A4081700FE48EA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,25 +137,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		818856DD21A3E81100FE48EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				818856DE21A3E81100FE48EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		818856E221A3E81200FE48EA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				818856E321A3E81200FE48EA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		818856E621A3E81200FE48EA /* Debug */ = {
@@ -282,7 +259,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +268,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajubd49.BackgroundDownloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +278,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackgroundDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +287,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajubd49.BackgroundDownloader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

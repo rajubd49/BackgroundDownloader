@@ -16,7 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        
+        let configuration = URLSessionConfiguration.background(withIdentifier: identifier)
+        let session = URLSession.init(configuration: configuration)
+        session.getTasksWithCompletionHandler { (dataTasks, uploadTasks, downloadTasks) in
+            completionHandler()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
