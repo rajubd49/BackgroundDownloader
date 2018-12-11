@@ -108,6 +108,7 @@ class ViewController: UIViewController {
         resetView()
         if let url = ViewController.url{
             let configuration = URLSessionConfiguration.default
+            configuration.sessionSendsLaunchEvents = true
             let session = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
             downloadTask = session.downloadTask(with: url)
             downloadTask.resume()
